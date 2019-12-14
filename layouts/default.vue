@@ -1,5 +1,14 @@
 <template>
   <div>
+    <meta name="theme-color" content="#fff1a3" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://flatbird.dev" />
+    <meta property="og:title" content="Flatbird" />
+    <meta property="og:image" content="/bird.png" />
+    <meta
+      property="og:description"
+      content="The website for the coolest bird ever."
+    />
     <nuxt />
   </div>
 </template>

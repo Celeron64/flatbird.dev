@@ -6,7 +6,7 @@
         Flatbird
       </h1>
       <h2 class="subtitle">
-        Web Developer
+        Noivce JS Developer
       </h2>
       <div class="links">
         <a href="mailto:bird@circlebot.xyz" class="button--yellow">
