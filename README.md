@@ -1,6 +1,6 @@
 # flatbird.dev
 
-> My breathtaking Nuxt.js project
+> My beautiful personal website.
 
 ## Build Setup
 
