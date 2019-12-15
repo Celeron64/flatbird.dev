@@ -36,6 +36,7 @@ html {
 
 .button--yellow:hover {
   color: #2c2f33;
+  transition: 2s;
   background-color: #fff1a3;
 }
 
@@ -51,6 +52,7 @@ html {
 
 .button--grey:hover {
   color: #fff;
+  transition: 2s;
   background-color: #99aab5;
 }
 
@@ -66,6 +68,7 @@ html {
 
 .button--66ccff:hover {
   color: #fff;
+  transition: 2s;
   background-color: #66ccff;
 }
 </style>
