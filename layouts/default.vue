@@ -1,14 +1,5 @@
 <template>
   <div>
-    <meta name="theme-color" content="#fff1a3" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://flatbird.dev" />
-    <meta property="og:title" content="Flatbird" />
-    <meta property="og:image" content="/bird.png" />
-    <meta
-      property="og:description"
-      content="The website for the coolest bird ever."
-    />
     <nuxt />
   </div>
 </template>
@@ -78,3 +69,26 @@ html {
   background-color: #66ccff;
 }
 </style>
+
+<script>
+export default {
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'theme-color',
+          name: 'theme-color',
+          content: '#fff1a3'
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: 'Flatbird'
+        }
+      ]
+    }
+  }
+}
+</script>
