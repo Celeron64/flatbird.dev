@@ -86,6 +86,16 @@ export default {
           hid: 'og:title',
           name: 'og:title',
           content: 'Flatbird'
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: 'A website for the coolest bird ever.'
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: '/bird.png'
         }
       ]
     }
