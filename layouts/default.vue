@@ -6,6 +6,7 @@
 
 <style>
 html {
+  margin: 10px;
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   background: #2c2f33;
@@ -31,6 +32,7 @@ html {
   border: 1px solid #fff1a3;
   color: #fff1a3;
   text-decoration: none;
+  margin: 10px;
   padding: 10px 30px;
 }
 
@@ -47,6 +49,7 @@ html {
   color: #99aab5;
   text-decoration: none;
   padding: 10px 30px;
+  margin: 10px;
   margin-left: 15px;
 }
 
@@ -63,6 +66,7 @@ html {
   color: #66ccff;
   text-decoration: none;
   padding: 10px 30px;
+  margin: 10px;
   margin-left: 15px;
 }
 
