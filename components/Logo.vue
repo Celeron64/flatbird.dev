@@ -3,7 +3,6 @@
 </template>
 <style>
 .NuxtLogo {
-  animation: 5s appear;
   border-radius: 50%;
 }
 

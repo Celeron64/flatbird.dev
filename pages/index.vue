@@ -50,6 +50,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  animation: 5s appear;
 }
 
 .title {
@@ -72,5 +73,14 @@ export default {
 
 .links {
   padding-top: 15px;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>
