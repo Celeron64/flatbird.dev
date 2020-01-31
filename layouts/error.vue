@@ -1,8 +1,31 @@
 <template>
-  <div>
-    <nuxt />
+  <div class="container">
+    <div>
+      <h1 v-if="error.statusCode === 404" class="title">404</h1>
+      <h1 v-else>Something went wrong</h1>
+      <h2 class="subtitle">Page not found</h2>
+      <div class="links">
+        <a href="mailto:bird@circlebot.xyz" class="button--yellow">
+          Report a problem
+        </a>
+        <a href="/" class="button--grey">
+          Go home
+        </a>
+      </div>
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    error: {
+      type: Object,
+      default: null
+    }
+  }
+}
+</script>
 
 <style>
 html {
@@ -75,37 +98,35 @@ html {
   transition: 2s;
   background-color: #66ccff;
 }
-</style>
 
-<script>
-export default {
-  head() {
-    return {
-      title: this.title,
-      meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        {
-          hid: 'theme-color',
-          name: 'theme-color',
-          content: '#fff1a3'
-        },
-        {
-          hid: 'og:title',
-          name: 'og:title',
-          content: 'Flatbird'
-        },
-        {
-          hid: 'og:description',
-          name: 'og:description',
-          content: 'A website for the coolest bird ever.'
-        },
-        {
-          hid: 'og:image',
-          name: 'og:image',
-          content: '/bird.png'
-        }
-      ]
-    }
-  }
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-</script>
+
+.title {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  display: block;
+  font-weight: 320;
+  font-size: 100px;
+  color: #8e9dbd;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 42px;
+  color: #526488;
+  word-spacing: 5px;
+  padding-bottom: 15px;
+}
+
+.links {
+  padding-top: 15px;
+}
+</style>
