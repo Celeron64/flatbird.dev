@@ -6,7 +6,6 @@
 
 <style>
 html {
-  margin: 10px;
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   background: #2c2f33;

@@ -3,26 +3,19 @@
     <div>
       <logo />
       <h1 class="title">
-        Flatbird
+        Aaron
       </h1>
       <h2 class="subtitle">
-        pro script kiddie
+        <img src="https://cdn.discordapp.com/emojis/543967292409511956.gif?v=1" />
       </h2>
       <div class="links">
-        <a href="mailto:bird@circlebot.xyz" class="button--yellow">
+        <a href="mailto:contact@circlebot.xyz" class="button--yellow">
           Email me
-        </a>
-        <a
-          href="https://github.com/flat-bird"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
         </a>
         <a
           href="https://circlebot.xyz"
           target="_blank"
-          title="My main Project"
+          title="free advertising"
           class="button--66ccff"
         >
           Circle
@@ -33,11 +26,39 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue';
+import Logo from '~/components/aaron.vue';
 
 export default {
   components: {
     Logo
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+        {
+          hid: 'theme-color',
+          name: 'theme-color',
+          content: '#66ccff'
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: 'aaron'
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: 'yes.'
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: '/aaron.png'
+        }
+      ]
+    };
   }
 };
 </script>
