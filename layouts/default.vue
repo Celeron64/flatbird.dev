@@ -105,7 +105,7 @@ export default {
           content: '/bird.png'
         }
       ]
-    }
+    };
   }
-}
+};
 </script>
