@@ -1,9 +1,10 @@
 <template>
-  <img class="NuxtLogo" src="aaron.png" />
+  <img class="NuxtLogo" src="doubt.png" />
 </template>
 <style>
 .NuxtLogo {
-  border-radius: 50%;
+  width: 312px;
+  height: 312px;
 }
 
 @keyframes appear {

@@ -25,37 +25,37 @@ html {
   margin: 0;
 }
 
-.button--yellow {
+.button--email {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #fff1a3;
-  color: #fff1a3;
+  border: 1px solid #ff4444;
+  color: #ff4444;
   text-decoration: none;
   margin: 10px;
   padding: 10px 30px;
+  transition: all 2s ease-out;
 }
 
-.button--yellow:hover {
-  color: #2c2f33;
-  transition: 2s;
-  background-color: #fff1a3;
+.button--email:hover {
+  color: #fff;
+  background-color: #ff4444;
 }
 
-.button--grey {
+.button--blurple {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #99aab5;
-  color: #99aab5;
+  border: 1px solid #7289da;
+  color: #7289da;
   text-decoration: none;
   padding: 10px 30px;
   margin: 10px;
   margin-left: 15px;
+  transition: all 2s ease-out;
 }
 
-.button--grey:hover {
+.button--blurple:hover {
   color: #fff;
-  transition: 2s;
-  background-color: #99aab5;
+  background-color: #7289da;
 }
 
 .button--66ccff {
@@ -67,11 +67,11 @@ html {
   padding: 10px 30px;
   margin: 10px;
   margin-left: 15px;
+  transition: all 2s ease-out;
 }
 
 .button--66ccff:hover {
   color: #fff;
-  transition: 2s;
   background-color: #66ccff;
 }
 </style>
@@ -83,11 +83,6 @@ export default {
       title: this.title,
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        {
-          hid: 'theme-color',
-          name: 'theme-color',
-          content: '#fff1a3'
-        },
         {
           hid: 'og:title',
           name: 'og:title',

@@ -1,34 +1,17 @@
 <template>
   <div class="c">
-    <div>
-      <logo />
-      <h1 class="title">
-        Flatbird
-      </h1>
-      <h2 class="subtitle">
-        pro script kiddie
-      </h2>
-      <div class="links">
-        <a href="mailto:bird@circlebot.xyz" class="button--yellow">
-          Email me
-        </a>
-        <a
-          href="https://github.com/flat-bird"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-        <a
-          href="https://circlebot.xyz"
-          target="_blank"
-          title="My main Project"
-          class="button--66ccff"
-        >
-          Circle
-        </a>
-      </div>
-    </div>
+    <Logo />
+    <h1 class="title">Flatbird<span class="subtitle">#0001</span></h1>
+    <h3 class="subtitle">pro script kiddie</h3>
+    <a href="mailto:bird@circlebot.xyz" class="button--email">
+      Email
+    </a>
+    <a href="https://discord.gg/v2uS9nw" class="button--blurple">
+      Discord
+    </a>
+    <a href="https://circlebot.xyz" class="button--66ccff">
+      Main Project
+    </a>
   </div>
 </template>
 
@@ -56,7 +39,6 @@ body {
   align-items: center;
   text-align: center;
   background-color: #2c2f33;
-  animation: 5s appear;
 }
 
 .title {
@@ -64,29 +46,20 @@ body {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 320;
-  font-size: 100px;
-  color: #8e9dbd;
+  font-size: 60px;
+  color: #fff;
   letter-spacing: 1px;
 }
 
 .subtitle {
   font-weight: 300;
   font-size: 42px;
-  color: #526488;
+  color: rgb(145, 145, 145);
   word-spacing: 5px;
   padding-bottom: 15px;
 }
 
 .links {
   padding-top: 15px;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 </style>

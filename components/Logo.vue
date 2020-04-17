@@ -4,6 +4,8 @@
 <style>
 .NuxtLogo {
   border-radius: 50%;
+  width: 312px;
+  height: 312px;
 }
 
 @keyframes appear {

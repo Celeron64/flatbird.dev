@@ -1,23 +1,21 @@
 <template>
-  <div class="container">
-    <div>
-      <h1 v-if="error.statusCode === 404" class="title">404</h1>
-      <h1 v-else>Something went wrong</h1>
-      <h2 class="subtitle">Page not found</h2>
-      <div class="links">
-        <a href="mailto:bird@circlebot.xyz" class="button--yellow">
-          Report a problem
-        </a>
-        <a href="/" class="button--grey">
-          Go home
-        </a>
-      </div>
-    </div>
+  <div class="c">
+    <Logo />
+    <h1 class="title">404. not found.</h1>
+    <h3 class="subtitle">serious yikes</h3>
+    <a href="mailto:bird@circlebot.xyz" class="button--email">
+      report an issue
+    </a>
   </div>
 </template>
 
 <script>
+import Logo from '~/components/404.vue';
+
 export default {
+  components: {
+    Logo
+  },
   props: {
     error: {
       type: Object,
@@ -28,27 +26,6 @@ export default {
 </script>
 
 <style>
-html {
-  margin: 10px;
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  background: #2c2f33;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
 .button--yellow {
   display: inline-block;
   border-radius: 4px;
@@ -98,14 +75,19 @@ html {
   transition: 2s;
   background-color: #66ccff;
 }
-
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
+body {
+  height: 100%;
+  cursor: default;
+}
+*:hover {
+  cursor: default;
+}
+.c {
+  margin-top: 50px;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: #2c2f33;
 }
 
 .title {
@@ -113,15 +95,15 @@ html {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 320;
-  font-size: 100px;
-  color: #8e9dbd;
+  font-size: 60px;
+  color: #fff;
   letter-spacing: 1px;
 }
 
 .subtitle {
   font-weight: 300;
   font-size: 42px;
-  color: #526488;
+  color: rgb(145, 145, 145);
   word-spacing: 5px;
   padding-bottom: 15px;
 }
