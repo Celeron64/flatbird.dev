@@ -5,75 +5,35 @@
 </template>
 
 <style>
+:root {
+  --white: #fff;
+  --dark: #2c2f33;
+  --red: #c8102e;
+}
 html {
   margin: 10px;
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  background: #2c2f33;
-  font-size: 16px;
+  background: var(--dark);
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  margin: 30px;
 }
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+.center {
+  padding: 70px 0;
+  text-align: center;
 }
-
-.button--yellow {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #fff1a3;
-  color: #fff1a3;
-  text-decoration: none;
-  margin: 10px;
-  padding: 10px 30px;
+.NuxtLogo {
+  border-radius: 50%;
 }
-
-.button--yellow:hover {
-  color: #2c2f33;
-  transition: 2s;
-  background-color: #fff1a3;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #99aab5;
-  color: #99aab5;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin: 10px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  transition: 2s;
-  background-color: #99aab5;
-}
-
-.button--66ccff {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #66ccff;
-  color: #66ccff;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin: 10px;
-  margin-left: 15px;
-}
-
-.button--66ccff:hover {
-  color: #fff;
-  transition: 2s;
-  background-color: #66ccff;
+h1 {
+  font-family: sofia-pro, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 81px;
+  color: var(--white);
 }
 </style>
 
@@ -82,6 +42,12 @@ export default {
   head() {
     return {
       title: this.title,
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://use.typekit.net/yao2abo.css'
+        }
+      ],
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
@@ -105,7 +71,7 @@ export default {
           content: '/bird.png'
         }
       ]
-    }
+    };
   }
-}
+};
 </script>

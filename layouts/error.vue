@@ -5,12 +5,10 @@
       <h1 v-else>Something went wrong</h1>
       <h2 class="subtitle">Page not found</h2>
       <div class="links">
-        <a href="mailto:bird@circlebot.xyz" class="button--yellow">
-          Report a problem
-        </a>
-        <a href="/" class="button--grey">
-          Go home
-        </a>
+        <a href="mailto:bird@circlebot.xyz" class="button--yellow"
+          >Report a problem</a
+        >
+        <a href="/" class="button--grey">Go home</a>
       </div>
     </div>
   </div>
@@ -24,24 +22,10 @@ export default {
       default: null
     }
   }
-}
+};
 </script>
 
 <style>
-html {
-  margin: 10px;
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  background: #2c2f33;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
 *,
 *:before,
 *:after {
