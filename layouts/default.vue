@@ -51,11 +51,6 @@ export default {
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
-          hid: 'theme-color',
-          name: 'theme-color',
-          content: '#fff1a3'
-        },
-        {
           hid: 'og:title',
           name: 'og:title',
           content: 'Flatbird'

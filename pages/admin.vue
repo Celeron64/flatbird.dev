@@ -1,3 +1,3 @@
 <template>
-  <h1>FUCK</h1>
+  <h1>lol no</h1>
 </template>
