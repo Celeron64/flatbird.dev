@@ -1,6 +1,6 @@
 # flatbird.dev
 
-> My beautiful personal website.
+This site kinda sucks. This was my first project with Nuxt.
 
 ## Build Setup
 
