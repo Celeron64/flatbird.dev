@@ -3,15 +3,8 @@
     <Logo />
     <h1 class="title">Flatbird<span class="subtitle">#0001</span></h1>
     <h3 class="subtitle">pro script kiddie</h3>
-    <a href="mailto:bird@circlebot.xyz" class="button--email">
-      Email
-    </a>
-    <a href="https://discord.gg/v2uS9nw" class="button--blurple">
-      Discord
-    </a>
-    <a href="https://circlebot.xyz" class="button--66ccff">
-      Main Project
-    </a>
+    <br /><br /><br />
+    <h3 class="subtitle"> actual website coming soon enough</h3>
   </div>
 </template>
 
