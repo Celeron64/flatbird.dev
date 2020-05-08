@@ -8,7 +8,7 @@
 <script>
 export default {
   middleware({ store, redirect }) {
-    return redirect('https://discord.gg/CH5hkTH');
+    return redirect('https://discord.bio/p/bird');
   }
 };
 </script>
