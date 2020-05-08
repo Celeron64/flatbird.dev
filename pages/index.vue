@@ -6,6 +6,6 @@
     <a href="/work" class="home-buttons btn">
       Work
     </a>
-    <a href="/discord" class="home-buttons btn">Discord</a>
+    <a href="/a" class="home-buttons btn">About Me</a>
   </div>
 </template>
